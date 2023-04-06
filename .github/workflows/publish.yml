@@ -3,7 +3,7 @@ name: publish
 on: [push]
 
 jobs:
-  publish-hello-world-image:
+  publish-qbitmf-image:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,4 +13,4 @@ jobs:
       run: |
         echo $CR_PAT | docker login ghcr.io -u twist3dimages --password-stdin
       env:
-        CR_PAT: ${{ secrets.CR_PAT }}
+        CR_PAT: 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
