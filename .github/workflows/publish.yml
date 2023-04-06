@@ -13,4 +13,4 @@ jobs:
       run: |
         echo $CR_PAT | docker login ghcr.io -u twist3dimages --password-stdin
       env:
-        CR_PAT: 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
+        CR_PAT:  ${{ secrets.CR_PAT }}
